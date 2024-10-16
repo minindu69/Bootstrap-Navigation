@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+}
+.nav-link{
+    color: rgb(0, 0, 173);
+}
+
+.nav-link:hover{
+    color: white;
+}
+
+.login-btn{
+    transition: 200ms color ease-in-out;
+    color: rgb(0, 0, 173);
+}
+
+.login-btn:hover{
+    color: white;
+}
+
+.signup-btn{
+    background-color: rgb(4, 231, 0);
+    color: rgb(0, 0, 173);
+    border: none;
+}
+
+.signup-btn:hover{
+    background-color: rgb(4, 231, 0);
+}
+
+/* .logo{
+    background-color: red;
+}
+
+.navi{
+    background-color: yellow;
+}
+
+.login{
+    background-color: orange;
+} */
+
+.stroked-icon {
+    color: black;
+    /* text-shadow: 0px 0px 1px black; */
+}
+
+svg{
+    transition: transform 0.3s ease;
+}
+
+svg:hover{
+    fill: white;
+    stroke: white;
+    transform: scale(1.2);
+    /* transform: rotate(350deg); */
+}
+
+/* media */
+@media(min-width: 840px){
+    .custom-col{
+        flex: 0 0 auto;
+        width: auto;
+    }
+}
+@media(max-width: 460px){
+    .navi, .login{
+        display: none !important;
+    }
+    .logo{
+        text-align: start !important;
+        width: auto;
+    }
+    .navbar-toggler {
+        display: block !important;
+    }
+}
+
